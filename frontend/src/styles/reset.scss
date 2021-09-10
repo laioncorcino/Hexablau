@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f2f2f2;
+
+&.no-scroll {
+     overflow: hidden;
+ }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+
+&:hover,
+&:active {
+     background: #888;
+ }
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+&:hover,
+&:active {
+     background: #ddd;
+ }
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
